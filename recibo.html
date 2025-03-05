@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recibo Profissional</title>
+    <link rel="stylesheet" href="/recibo/styles.css" />
+  </head>
+  <body>
+    <div class="receipt-container" id="receipt">
+      <div class="receipt-header">
+        <h1 contenteditable="true" class="editable-field">
+          PPB ENGENHARIA LTDA
+        </h1>
+        <div contenteditable="true" class="editable-field" id="company-details">
+          End.: Passagem São Pedro nº. 124-B – Fone: 3276-4706 – Fax: (091)
+          3276-2041 CNPJ. 22.911.135/0001-41 – Insc. Est. 15.137.717-0 - Insc.
+          Municipal 097.258-8 – Internet: e-mail: pbrigido@pbrigidoeng.com.br
+        </div>
+      </div>
+
+      <div class="receipt-details">
+        <div contenteditable="true" class="editable-field" id="receipt-number">
+          <strong>Recibo Nº:</strong> 0000
+        </div>
+
+        <div contenteditable="true" class="editable-field" id="recipient">
+          <strong>Recebemos de:</strong> [Nome do Cliente]
+        </div>
+
+        <div contenteditable="true" class="editable-field" id="value">
+          <strong>R$</strong> R$ 0,00
+        </div>
+
+        <div class="editable-field" id="value-words">
+          <strong>Valor:</strong> [Valor por extenso]
+        </div>
+
+        <div contenteditable="true" class="editable-field" id="description">
+          <strong>Referente a:</strong> [Descrição do Serviço/Produto]
+        </div>
+
+        <div contenteditable="true" class="editable-field" id="payment-details">
+          <strong>Dados bancários:</strong> [Método de Pagamento]
+        </div>
+      </div>
+
+      <div class="receipt-actions">
+        <button class="btn" onclick="convertToWords()">Converter Valor</button>
+        <button class="btn" onclick="printReceipt()">Imprimir Recibo</button>
+      </div>
+    </div>
+
+    <script src="/recibo/script.js"></script>
+  </body>
+</html>
