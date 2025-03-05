@@ -1,105 +1,131 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #34495e;
-    --background-color: #1f1f1f;
-    --text-color: #333;
-    --border-color: #bdc3c7;
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --background-color: #1f1f1f;
+  --text-color: #333;
+  --border-color: #bdc3c7;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    line-height: 1.6;
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  line-height: 1.6;
 }
 
 .receipt-container {
-    width: 100%;
-    max-width: 700px;
-    background-color: white;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    padding: 40px;
-    border: 1px solid var(--border-color);
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 40px;
+  border: 1px solid var(--border-color);
 }
 
 .receipt-header {
-    text-align: center;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .editable-field {
-    border: 1px dashed var(--border-color);
-    padding: 8px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+  border: 1px dashed var(--border-color);
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .editable-field:hover {
-    background-color: #f9f9f9;
-    border-color: var(--primary-color);
+  background-color: #f9f9f9;
+  border-color: var(--primary-color);
 }
 
 .editable-field:focus {
-    outline: 2px solid var(--primary-color);
-    background-color: #f0f0f0;
+  outline: 2px solid var(--primary-color);
+  background-color: #f0f0f0;
 }
 
 .receipt-actions {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
 }
 
 .btn {
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: absolute;
+  margin-bottom: 44%;
+}
+
+.home a {
+    text-decoration: none;
+    background-color: #292b2c;
+    width: 6rem;
+    justify-content: center;
+    display: flex;
+    color: white;
+    border-radius: 15px;
+}
+
+.home a:hover{
+    color: #0FFF50;
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 @media print {
-    body {
-        background-color: white;
-    }
-    .receipt-container {
-        box-shadow: none;
-        border: none;
-        padding: 0;
-    }
-    .receipt-actions {
-        display: none;
-    }
+  body {
+    background-color: white;
+  }
+  .receipt-container {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+  .receipt-actions {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .receipt-container {
-        padding: 20px;
-        margin: 0 10px;
-    }
-    .receipt-actions {
-        flex-direction: column;
-        align-items: center;
-    }
+  .receipt-container {
+    padding: 20px;
+    margin: 0 10px;
+  }
+  .receipt-actions {
+    flex-direction: column;
+    align-items: center;
+  }
 }
