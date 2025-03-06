@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 :root {
-  --primary-color: #2c3e50;
+  --primary-color: rgb(48, 80, 44);
   --secondary-color: #34495e;
   --background-color: #1f1f1f;
-  --text-color: #333;
+  --text-color: green;
   --border-color: #bdc3c7;
 }
 
@@ -33,16 +35,80 @@ body {
   border: 1px solid var(--border-color);
 }
 
+.top {
+  border: 2px solid green;
+  border-radius: 25px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.top2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  align-items: baseline;
+}
+
+.tudo {
+  width: auto;
+  padding: 2%;
+  border: 2px solid green;
+  border-radius: 25px;
+  margin-bottom: 25rem;
+}
+
+.value_text {
+  padding-left: 18%;
+  font-size: 1.23rem;
+}
+
+#receipt-number {
+  padding: 1%;
+  width: 30%;
+  border: 2px solid green;
+  border-radius: 8px;
+}
+
+#value {
+  gap: 5px;
+  padding-left: 2%;
+  width: 40%;
+  border: 2px solid green;
+  border-radius: 8px;
+  font-size: 1.23rem;
+}
+
+#recipient{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+}
+
+#value-words{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+}
+
 .receipt-header {
   text-align: center;
-  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
+#company-details {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 2%;
+}
+
 .editable-field {
-  border: 1px dashed var(--border-color);
-  padding: 8px;
   margin-bottom: 15px;
   border-radius: 4px;
   transition: all 0.3s ease;
@@ -83,24 +149,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: end;
-  position: absolute;
+  /* position: absolute; */
   margin-bottom: 44%;
 }
 
 .home a {
-    text-decoration: none;
-    background-color: #292b2c;
-    width: 6rem;
-    justify-content: center;
-    display: flex;
-    color: white;
-    border-radius: 15px;
+  text-decoration: none;
+  background-color: #292b2c;
+  width: 6rem;
+  justify-content: center;
+  display: flex;
+  color: white;
+  border-radius: 15px;
 }
 
-.home a:hover{
-    color: #0FFF50;
-    transition: 0.5s;
-    background: rgba(255, 255, 255, 0.1);
+.home a:hover {
+  color: #0fff50;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.1);
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

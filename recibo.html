@@ -9,51 +9,71 @@
   <body>
     <div class="receipt-container" id="receipt">
       <div class="receipt-header">
-        <h1 contenteditable="true" class="editable-field">
-          PPB ENGENHARIA LTDA
-        </h1>
-        <div contenteditable="true" class="editable-field" id="company-details">
-          End.: Passagem São Pedro nº. 124-B – Fone: 3276-4706 – Fax: (091)
-          3276-2041 CNPJ. 22.911.135/0001-41 – Insc. Est. 15.137.717-0 - Insc.
-          Municipal 097.258-8 – Internet: e-mail: pbrigido@pbrigidoeng.com.br
+        <div class="top">
+          <h1 contenteditable="true" class="editable-field">
+            PPB ENGENHARIA LTDA
+          </h1>
+          <div
+            contenteditable="true"
+            class="editable-field"
+            id="company-details"
+          >
+            End.: Passagem São Pedro nº. 124-B – Fone: 3276-4706 – Fax: (091)
+            3276-2041 CNPJ. 22.911.135/0001-41 – Insc. Est. 15.137.717-0 - Insc.
+            Municipal 097.258-8 – Internet: e-mail: pbrigido@pbrigidoeng.com.br
+          </div>
         </div>
       </div>
 
-      <div class="receipt-details">
-        <div contenteditable="true" class="editable-field" id="receipt-number">
-          <strong>Recibo Nº:</strong> 0000
+      <div class="tudo">
+        <div class="bottom">
+          <div class="top2">
+            <div
+              contenteditable="true"
+              class="editable-field"
+              id="receipt-number"
+            >
+              <strong>Recibo Nº:</strong> 0000
+            </div>
+
+            <div class="value_text">Valor:</div>
+
+            <div contenteditable="true" class="editable-field" id="value">
+              <strong>R$</strong> 0,00
+            </div>
+          </div>
+
+          <div class="receipt-details">
+            <div contenteditable="true" class="editable-field" id="recipient">
+              <strong>Recebemos de:</strong>
+            </div>
+
+            <div class="editable-field" id="value-words">
+              <strong>A importância de</strong>
+            </div>
+
+            <div contenteditable="true" class="editable-field" id="description">
+              <strong>Referente a:</strong>
+            </div>
+
+            <div
+              contenteditable="true"
+              class="editable-field"
+              id="payment-details"
+            >
+              <strong>Dados bancários:</strong>
+            </div>
+          </div>
         </div>
 
-        <div contenteditable="true" class="editable-field" id="recipient">
-          <strong>Recebemos de:</strong>
+        <div class="receipt-actions">
+          <button class="btn" onclick="convertToWords()">
+            Converter Valor
+          </button>
+          <button class="btn" onclick="printReceipt()">Imprimir Recibo</button>
         </div>
-
-        <div contenteditable="true" class="editable-field" id="value">
-          <strong>R$</strong> 0,00
-        </div>
-
-        <div class="editable-field" id="value-words">
-          <strong>Valor:</strong>
-        </div>
-
-        <div contenteditable="true" class="editable-field" id="description">
-          <strong>Referente a:</strong>
-        </div>
-
-        <div contenteditable="true" class="editable-field" id="payment-details">
-          <strong>Dados bancários:</strong>
-        </div>
-      </div>
-
-      <div class="receipt-actions">
-        <button class="btn" onclick="convertToWords()">Converter Valor</button>
-        <button class="btn" onclick="printReceipt()">Imprimir Recibo</button>
       </div>
     </div>
-
-    <div class="home">
-        <a href="index.html">HOME</a>
-      </div>
 
     <script src="/recibo/script.js"></script>
   </body>

@@ -136,7 +136,7 @@ function convertToWords() {
     
     if (!isNaN(numericValue)) {
         const wordsValue = numberToWords(numericValue);
-        valueWordsInput.innerHTML = `<strong>Valor por extenso:</strong> ${wordsValue}`;
+        valueWordsInput.innerHTML = `<strong>A importância de:</strong> ${wordsValue}`;
     } else {
         alert('Valor inválido. Use o formato R$ 0,00');
     }
