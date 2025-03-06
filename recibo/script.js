@@ -132,7 +132,8 @@ function convertToWords() {
     const valueWordsInput = document.getElementById('value-words');
     
     // Remove 'R$' and replace comma with dot
-    const numericValue = parseFloat(valueInput.textContent.replace('R$', '').trim().replace(',', '.'));
+    const numericValue = parseFloat(valueInput.textContent.replace(/[^\d,]/g, '').replace(',', '.'));
+
     
     if (!isNaN(numericValue)) {
         const wordsValue = numberToWords(numericValue);
