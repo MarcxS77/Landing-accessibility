@@ -152,6 +152,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentDate = new Date().toLocaleDateString('pt-BR');
     const dateElement = document.createElement('div');
     dateElement.className = 'editable-field';
-    dateElement.innerHTML = `<strong>Data:</strong> ${currentDate}`;
     document.querySelector('.receipt-actions').before(dateElement);
 });
